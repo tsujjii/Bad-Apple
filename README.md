@@ -58,6 +58,7 @@ If you run code for the first time, frames will be generated from the video (whi
 * [opencv-python](https://opencv.org/)
 * [fpstimer](https://pypi.org/project/fpstimer/)
 * [playsound](https://pypi.org/project/playsound/)
+* [pynput](https://pypi.org/project/pynput/)
 * [tqdm](https://pypi.org/project/tqdm/)
 
 
