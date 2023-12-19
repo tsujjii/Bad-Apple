@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "bad-apple"
+version = "0.1.0"
+description = "Bad Apple, but it's in python "
+authors = ["tsuji <https://github.com/tsujjii>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+opencv-python = "^4.8.1.78"
+fpstimer = "^0.0.1"
+playsound = "1.2.2"
+pynput = "^1.7.6"
+tqdm = "^4.66.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

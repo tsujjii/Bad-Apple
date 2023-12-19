@@ -1,0 +1,6 @@
+.venv
+.vscode
+poetry.lock
+frames
+__pycache__
+.__pycache__

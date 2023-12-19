@@ -1,9 +1,7 @@
 # Bad Apple in terminal using Python
 
-When I was searching something to watch on YouTube, I find [THIS](https://www.youtube.com/watch?v=6zs6S_I5gH8)
-video and want to try to do something just like that by myself "and of course with help of stackoverflow". 
-
-[Link](https://youtu.be/ikyKLfB4cfg) to my video on YouTube.
+### Please note, this is a fork from the original creator [Koteikar](https://github.com/Koteikar)
+#### You can see his video [here](https://www.youtube.com/watch?v=ikyKLfB4cfg&ab_channel=AndrewDanylyshyn)
 
 ![](images/git-preview.gif)
 
@@ -15,25 +13,29 @@ For this project you'll need these packages to install:
 * opencv-python
 * fpstimer
 * playsound
+* pynput
+* tqdm 
 
-### Installing packages
+### Installing packages with pip
 
 To install these packages write to console this code:
 
-```
-pip install opencv-python
-```
-```
-pip install fpstimer
-```
-```
-pip install playsound==1.2.2
-```
-or you can set your terminal to the directory of this repository and simply paste this:
-```
+
+```python
 pip install -r requirements.txt
 ```
 
+### Installing packages with poetry
+
+First you need to spawn your venv with poetry
+```python
+poetry shell 
+```
+Then install the dependencies
+
+```python
+poetry install
+```
 
 ## Size of window
 
@@ -45,26 +47,30 @@ To check the size of text you need to go to settings > system > display > change
 ### Running this code
 
 To run this code print in terminal:
-```
+```python
 python main.py
 ```
-If you run code for the first time, you need to type 'Y' when the code ask you if frames are needed.
+If you run code for the first time, frames will be generated from the video (which are stored in the frames folder), but you can monitor the progress through the console, this only needs to be generated the first time. After that, the integrity of the frames is only checked to ensure that nothing is missing.
 
 ## Built With
 
-* [Python 3.9.6](https://www.python.org/)
+* [Python 3.11.5](https://www.python.org/)
 * [opencv-python](https://opencv.org/)
 * [fpstimer](https://pypi.org/project/fpstimer/)
 * [playsound](https://pypi.org/project/playsound/)
+* [tqdm](https://pypi.org/project/tqdm/)
 
 
 ## Authors
 
 * **Andrew Danylyshyn** - *Initial work* - [Koteikar](https://github.com/Koteikar)
+* **Adriano Warmling** - *Adaptations* - [Tsujjii](https://github.com/tsujjii)
 
 
-## Acknowledgments
+## Acknowledgments from [Koteikar](https://github.com/Koteikar)
 
 I'm extremely grateful to ZEN, for creating of Touhou.
 
 I must also thank [あにら](https://www.nicovideo.jp/watch/sm8628149), for creating of video.
+___
+NOTE: Also, remember to see the original work 😉
